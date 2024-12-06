@@ -18,14 +18,10 @@ func main() {
 	xShapedMasCount := 0
 
 	directions := [][2]int{
-		{0, 1},
-		{0, -1},
-		{-1, 0},
-		{1, 0},
-		{-1, 1},
-		{-1, -1},
-		{1, -1},
-		{1, 1},
+		{0, 1},  // Right
+		{0, -1}, // Left
+		{-1, 0}, // Up
+		{1, 0},  // Down
 	}
 
 	for row := 0; row < len(grid); row++ {

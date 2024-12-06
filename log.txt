@@ -1,101 +1,164 @@
-Loading file as structured data...
-Loading rules and updates from input file...
-Parsing rule line: 47|53
-Parsing rule line: 97|13
-Parsing rule line: 97|61
-Parsing rule line: 97|47
-Parsing rule line: 75|29
-Parsing rule line: 61|13
-Parsing rule line: 75|53
-Parsing rule line: 29|13
-Parsing rule line: 97|29
-Parsing rule line: 53|29
-Parsing rule line: 61|53
-Parsing rule line: 97|53
-Parsing rule line: 61|29
-Parsing rule line: 47|13
-Parsing rule line: 75|47
-Parsing rule line: 97|75
-Parsing rule line: 47|61
-Parsing rule line: 75|61
-Parsing rule line: 47|29
-Parsing rule line: 75|13
-Parsing rule line: 53|13
-Parsing update line: 75,47,61,53,29
-Parsing update line: 97,61,53,29,13
-Parsing update line: 75,29,13
-Parsing update line: 75,97,47,61,53
-Parsing update line: 61,13,29
-Parsing update line: 97,13,75,29,47
-Loaded 21 rules and 6 updates
-Creating page dependencies map...
-Sorting pages based on dependencies...
-Calculating dependencies...
-Initializing queue with nodes that have no dependencies...
-Current node: 97, queue: []
-Current node: 75, queue: []
-Current node: 47, queue: []
-Current node: 61, queue: []
-Current node: 53, queue: []
-Current node: 29, queue: []
-Current node: 13, queue: []
-Cycle detected in the graph, unable to sort all nodes.
-Sorted order: [97 75 47 61 53 29 13]
-Global order: [97 75 47 61 53 29 13]
-Processing updates...
-Processing update: [75 47 61 53 29]
-Validating update: [75 47 61 53 29]
-Update is valid.
-Update is valid.
-Middle value of valid update: 61
-Processing update: [97 61 53 29 13]
-Validating update: [97 61 53 29 13]
-Update is valid.
-Update is valid.
-Middle value of valid update: 53
-Processing update: [75 29 13]
-Validating update: [75 29 13]
-Update is valid.
-Update is valid.
-Middle value of valid update: 29
-Processing update: [75 97 47 61 53]
-Validating update: [75 97 47 61 53]
-Invalid update: page 97 comes before page 75
-Update is invalid, attempting to reorder...
-Reordering update: [75 97 47 61 53]
-Swapping 75 and 97
-Sorted update: [97 75 47 61 53]
-Reordered update: [97 75 47 61 53]
-Validating update: [97 75 47 61 53]
-Update is valid.
-Reordered update is valid.
-Middle value of reordered update: 47
-Processing update: [61 13 29]
-Validating update: [61 13 29]
-Invalid update: page 29 comes before page 13
-Update is invalid, attempting to reorder...
-Reordering update: [61 13 29]
-Swapping 13 and 29
-Sorted update: [61 29 13]
-Reordered update: [61 29 13]
-Validating update: [61 29 13]
-Update is valid.
-Reordered update is valid.
-Middle value of reordered update: 29
-Processing update: [97 13 75 29 47]
-Validating update: [97 13 75 29 47]
-Invalid update: page 47 comes before page 13
-Update is invalid, attempting to reorder...
-Reordering update: [97 13 75 29 47]
-Swapping 13 and 75
-Swapping 13 and 29
-Swapping 29 and 47
-Swapping 13 and 29
-Sorted update: [97 75 47 29 13]
-Reordered update: [97 75 47 29 13]
-Validating update: [97 75 47 29 13]
-Update is valid.
-Reordered update is valid.
-Middle value of reordered update: 47
-Valid middle page value total: 143
-Corrected middle page value total: 123
+Loading patrol grid from input string...
+Loading structured data from input file string...
+Structured data loaded successfully.
+Patrol grid loaded: 10x10
+Searching for guard's initial position and orientation...
+Guard found at position (6, 4) facing N
+Starting at initial position (6, 4), total distinct visited cells: 1
+Starting patrol...
+Current position: (6, 4), facing direction index: 0
+Attempting to move to position (5, 4)
+Moved to new position (5, 4), total distinct visited cells: 2
+Current position: (5, 4), facing direction index: 0
+Attempting to move to position (4, 4)
+Moved to new position (4, 4), total distinct visited cells: 3
+Current position: (4, 4), facing direction index: 0
+Attempting to move to position (3, 4)
+Moved to new position (3, 4), total distinct visited cells: 4
+Current position: (3, 4), facing direction index: 0
+Attempting to move to position (2, 4)
+Moved to new position (2, 4), total distinct visited cells: 5
+Current position: (2, 4), facing direction index: 0
+Attempting to move to position (1, 4)
+Moved to new position (1, 4), total distinct visited cells: 6
+Current position: (1, 4), facing direction index: 0
+Attempting to move to position (0, 4)
+Encountered obstacle at (0, 4), changing direction.
+New direction index: 1
+Moved to new position (1, 5), total distinct visited cells: 7
+Current position: (1, 5), facing direction index: 1
+Attempting to move to position (1, 6)
+Moved to new position (1, 6), total distinct visited cells: 8
+Current position: (1, 6), facing direction index: 1
+Attempting to move to position (1, 7)
+Moved to new position (1, 7), total distinct visited cells: 9
+Current position: (1, 7), facing direction index: 1
+Attempting to move to position (1, 8)
+Moved to new position (1, 8), total distinct visited cells: 10
+Current position: (1, 8), facing direction index: 1
+Attempting to move to position (1, 9)
+Encountered obstacle at (1, 9), changing direction.
+New direction index: 2
+Moved to new position (2, 8), total distinct visited cells: 11
+Current position: (2, 8), facing direction index: 2
+Attempting to move to position (3, 8)
+Moved to new position (3, 8), total distinct visited cells: 12
+Current position: (3, 8), facing direction index: 2
+Attempting to move to position (4, 8)
+Moved to new position (4, 8), total distinct visited cells: 13
+Current position: (4, 8), facing direction index: 2
+Attempting to move to position (5, 8)
+Moved to new position (5, 8), total distinct visited cells: 14
+Current position: (5, 8), facing direction index: 2
+Attempting to move to position (6, 8)
+Moved to new position (6, 8), total distinct visited cells: 15
+Current position: (6, 8), facing direction index: 2
+Attempting to move to position (7, 8)
+Encountered obstacle at (7, 8), changing direction.
+New direction index: 3
+Moved to new position (6, 7), total distinct visited cells: 16
+Current position: (6, 7), facing direction index: 3
+Attempting to move to position (6, 6)
+Moved to new position (6, 6), total distinct visited cells: 17
+Current position: (6, 6), facing direction index: 3
+Attempting to move to position (6, 5)
+Moved to new position (6, 5), total distinct visited cells: 18
+Current position: (6, 5), facing direction index: 3
+Attempting to move to position (6, 4)
+Moved to already visited position (6, 4), total distinct visited cells remains: 18
+Current position: (6, 4), facing direction index: 3
+Attempting to move to position (6, 3)
+Moved to new position (6, 3), total distinct visited cells: 19
+Current position: (6, 3), facing direction index: 3
+Attempting to move to position (6, 2)
+Moved to new position (6, 2), total distinct visited cells: 20
+Current position: (6, 2), facing direction index: 3
+Attempting to move to position (6, 1)
+Encountered obstacle at (6, 1), changing direction.
+New direction index: 0
+Moved to new position (5, 2), total distinct visited cells: 21
+Current position: (5, 2), facing direction index: 0
+Attempting to move to position (4, 2)
+Moved to new position (4, 2), total distinct visited cells: 22
+Current position: (4, 2), facing direction index: 0
+Attempting to move to position (3, 2)
+Encountered obstacle at (3, 2), changing direction.
+New direction index: 1
+Moved to new position (4, 3), total distinct visited cells: 23
+Current position: (4, 3), facing direction index: 1
+Attempting to move to position (4, 4)
+Moved to already visited position (4, 4), total distinct visited cells remains: 23
+Current position: (4, 4), facing direction index: 1
+Attempting to move to position (4, 5)
+Moved to new position (4, 5), total distinct visited cells: 24
+Current position: (4, 5), facing direction index: 1
+Attempting to move to position (4, 6)
+Moved to new position (4, 6), total distinct visited cells: 25
+Current position: (4, 6), facing direction index: 1
+Attempting to move to position (4, 7)
+Encountered obstacle at (4, 7), changing direction.
+New direction index: 2
+Moved to new position (5, 6), total distinct visited cells: 26
+Current position: (5, 6), facing direction index: 2
+Attempting to move to position (6, 6)
+Moved to already visited position (6, 6), total distinct visited cells remains: 26
+Current position: (6, 6), facing direction index: 2
+Attempting to move to position (7, 6)
+Moved to new position (7, 6), total distinct visited cells: 27
+Current position: (7, 6), facing direction index: 2
+Attempting to move to position (8, 6)
+Moved to new position (8, 6), total distinct visited cells: 28
+Current position: (8, 6), facing direction index: 2
+Attempting to move to position (9, 6)
+Encountered obstacle at (9, 6), changing direction.
+New direction index: 3
+Moved to new position (8, 5), total distinct visited cells: 29
+Current position: (8, 5), facing direction index: 3
+Attempting to move to position (8, 4)
+Moved to new position (8, 4), total distinct visited cells: 30
+Current position: (8, 4), facing direction index: 3
+Attempting to move to position (8, 3)
+Moved to new position (8, 3), total distinct visited cells: 31
+Current position: (8, 3), facing direction index: 3
+Attempting to move to position (8, 2)
+Moved to new position (8, 2), total distinct visited cells: 32
+Current position: (8, 2), facing direction index: 3
+Attempting to move to position (8, 1)
+Moved to new position (8, 1), total distinct visited cells: 33
+Current position: (8, 1), facing direction index: 3
+Attempting to move to position (8, 0)
+Encountered obstacle at (8, 0), changing direction.
+New direction index: 0
+Moved to new position (7, 1), total distinct visited cells: 34
+Current position: (7, 1), facing direction index: 0
+Attempting to move to position (6, 1)
+Encountered obstacle at (6, 1), changing direction.
+New direction index: 1
+Moved to new position (7, 2), total distinct visited cells: 35
+Current position: (7, 2), facing direction index: 1
+Attempting to move to position (7, 3)
+Moved to new position (7, 3), total distinct visited cells: 36
+Current position: (7, 3), facing direction index: 1
+Attempting to move to position (7, 4)
+Moved to new position (7, 4), total distinct visited cells: 37
+Current position: (7, 4), facing direction index: 1
+Attempting to move to position (7, 5)
+Moved to new position (7, 5), total distinct visited cells: 38
+Current position: (7, 5), facing direction index: 1
+Attempting to move to position (7, 6)
+Moved to already visited position (7, 6), total distinct visited cells remains: 38
+Current position: (7, 6), facing direction index: 1
+Attempting to move to position (7, 7)
+Moved to new position (7, 7), total distinct visited cells: 39
+Current position: (7, 7), facing direction index: 1
+Attempting to move to position (7, 8)
+Encountered obstacle at (7, 8), changing direction.
+New direction index: 2
+Moved to new position (8, 7), total distinct visited cells: 40
+Current position: (8, 7), facing direction index: 2
+Attempting to move to position (9, 7)
+Moved to new position (9, 7), total distinct visited cells: 41
+Current position: (9, 7), facing direction index: 2
+Attempting to move to position (10, 7)
+Next position is out of bounds, stopping patrol.
+Total distinct guard locations: 41
